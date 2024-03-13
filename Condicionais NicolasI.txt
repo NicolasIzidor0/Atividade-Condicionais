@@ -1,0 +1,246 @@
+//CONDIÇÃO SIMPLES
+            //1
+            Console.WriteLine("Digite um número inteiro");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite outro número inteiro");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            if (num1 > num2)
+            {
+                Console.WriteLine("o primeiro número é maior");
+            }
+            Console.ReadLine();
+
+            //2
+            Console.WriteLine("Digite um numero");
+	    double num1 = Convert.ToDouble(Console.ReadLine());
+
+            if (num1 > 0)
+            {
+                Console.WriteLine("Número positivo");
+            }
+
+            Console.ReadLine();
+
+            //3
+            Console.WriteLine("Digite a senha");
+            int senha = Convert.ToInt32(Console.ReadLine());
+
+            if (senha == 56789) 
+            {
+                Console.WriteLine("ACESSO PERMITIDO");
+            }
+            Console.ReadLine();
+
+            //4
+            Console.WriteLine("Digite sua idade");
+            int idade = Convert.ToInt32(Console.ReadLine());
+
+            if (idade > 16)
+            {
+                Console.WriteLine("Você pode votar");
+            }
+
+            Console.ReadLine();
+
+            //5
+            int num1 = 10;
+            int num2 = 10;
+
+            if (num1 == num2) 
+            {
+                Console.WriteLine("Os números são iguais");
+            }
+
+            Console.ReadLine();
+
+            //6
+	    Console.WriteLine("Digite um número inteiro");
+            double nota1 = Convert.ToDouble(Console.ReadLine());
+	    Console.WriteLine("Digite outro número inteiro");
+            double nota2 = Convert.ToDouble(Console.ReadLine());
+	    Console.WriteLine("Digite o ultimo número inteiro");
+            double nota3 = Convert.ToDouble(Console.ReadLine());
+
+            double media = (nota1 + nota2 + nota3) / 3;
+
+            if (media > 7) 
+            {
+                Console.WriteLine("Você tirou uma nota maior que a média");
+            }
+            Console.ReadLine();
+
+
+
+
+
+
+
+            CONDIÇÃO COMPOSTA
+            1
+            Console.WriteLine("Digite um número inteiro");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int resto = num % 5;
+
+            if (resto == 0)
+            {
+                Console.WriteLine("O número é divisivel por 5");
+            }
+            else
+            {
+                Console.WriteLine("O número não é divisivel por 5");
+            }
+            Console.ReadLine();
+
+            2
+            Console.WriteLine("Digite uma nota");
+            double nota1 = Convert.ToDouble(Console.ReadLine());
+	    Console.WriteLine("Digite a segunda nota");
+            double nota2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite a ultima nota");
+            double nota3 = Convert.ToDouble(Console.ReadLine());
+
+            double media = (nota1 + nota2 + nota3) / 3;
+
+            if (media > 7)
+            {
+                Console.WriteLine("Aluno aprovado");
+            }
+            else
+            {
+                Console.WriteLine("Aluno reprovado");
+            }
+            Console.ReadLine();
+
+
+
+            3
+            Console.WriteLine("digite um valor");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            if (num1 > 0 && num1 < 100)
+            {
+                Console.WriteLine("Valor permitido");
+            }
+            else
+            {
+                Console.WriteLine("O valor digitado não é permitido");
+            }
+            Console.ReadLine();
+
+
+
+
+            4
+ 	    Console.WriteLine("Digite um número");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            double sobra = num1 % 2;
+            if (num1 > 10 && sobra == 0)
+            {
+                Console.WriteLine("Número maior que 10 e par");
+            }
+            else
+            {
+                Console.WriteLine("O número é menor que 10 e não é par");
+            }
+            Console.ReadLine();
+
+
+
+            5
+	    Console.WriteLine("Digite sua idade");
+            int idade = Convert.ToInt32(Console.ReadLine());
+
+            if (idade >= 21)
+            {
+                Console.WriteLine("Categoria Senior");
+            }
+            else if (idade < 21)
+            {
+                Console.WriteLine("Categoria Juvenil B");
+            }
+            else if (idade < 18)
+            {
+                Console.WriteLine("Categoria Juvenil A");
+            }
+            else if (idade < 13)
+            {
+                Console.WriteLine("Categoria Infantil B");
+            }
+            else if (idade <= 8)
+            {
+                Console.WriteLine("Categoria Infantil A");
+            }
+            Console.ReadLine();
+
+
+
+
+
+
+
+            CONDIÇÃO ENCADEADA
+            1
+            Console.WriteLine("Digite sua frequencia");
+            double freq = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite sua média");
+            int med = Convert.ToInt32(Console.ReadLine());
+
+            if (freq > 90)
+            {
+                if (med >= 8)
+                {
+                    Console.WriteLine("Aluno Aprovado");
+                }
+                else if (med > 5 && med <= 7)
+                {
+                    Console.WriteLine("Aluno Em Recuperação");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Reprovado por falta");
+            }
+            Console.ReadLine();
+
+            2
+            Console.WriteLine("Digite sua idade");
+            int idade = Convert.ToInt32(Console.ReadLine());
+
+            if (idade >= 18)
+            {
+                Console.WriteLine("Qual faculdade você gostaria de fazer");
+                string faculdade = Console.ReadLine();
+                Console.WriteLine("Você quer tirar carta?");
+                string carta = Console.ReadLine();
+                Console.WriteLine("Qual país gostaria de morar");
+                string pais = Console.ReadLine();
+                Console.WriteLine("O usúario gostaria de fazer a faculdade de " + faculdade + ",ele " + carta + " e gostaria de morar nos " + pais);
+
+            }
+            else
+            {
+                Console.WriteLine("Você é menor de idade");
+            }
+            Console.ReadLine();
+
+            3
+            Console.WriteLine("Digite o valor do seu salário");
+            double salario = Convert.ToDouble(Console.ReadLine());
+
+            if (salario > 1000 && salario < 3000)
+            {
+                double aumento1 = salario * 1.1;
+                Console.WriteLine("Seu novo salario é de " + aumento1);
+            }
+            else if (salario > 3000 && salario < 6000)
+            {
+                double aumento2 = salario * 1.05;
+                Console.WriteLine("Seu novo salario é de " + aumento2);
+            }
+            else
+            {
+                double aumento3 = salario * 1.03;
+                Console.WriteLine("Seu novo salario é de " + aumento3);
+            }
+            Console.ReadLine();
+
